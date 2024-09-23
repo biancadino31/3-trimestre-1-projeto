@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
+</head>
+<body>
+    <main>
+        <section id="container">
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Biologia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que e genotipo?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>É o conjunto de todos 05 genes de um organismo, ou seja, a informação genética que ele carrega em seu DNA.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Química</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que compostos organicos apresentam em sua composição? </p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Carbono como elemento principal.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Geografia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é tecnopolo?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Reune diversas empresas em um centro tecnoLogico.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Historia</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual foi o motivo da proclamação da República?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> Havia insatisfação entre os militares com salários e com a correira.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Portugués</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Quais são os passos que formam o artigo de opinião?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> introdução, desenvolvimento e conclusão.
+
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>ingles </h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que acrecentar nos verbos irregulares no simple Paste na forma interrogativa?? </p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> O verbo Auxiliar Did vem antes do sujeito.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Ed. financeira</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é taxa selic?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>  É a taxa básica do fueos da economia brasileira.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Robótica</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>O que é um sensor ultrassônico e como ele é utilizado em robôs autônomos?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p>Um sensor ultrassônico emite ondas sonoras de alta frequência e mede o tempo que essas ondas levam para retornar após atingir um objeto, permitindo que o robô calcule a distância até o objeto e desvie de obstáculos.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                        <p>Qual a função de um loop for na programação em C e como ele é estruturado?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                        <p> O loop for é usado para repetir um bloco de código um número específico de vezes. Ele é estruturado como for(inicialização; condição; incremento) e executa o bloco de código enquanto a condição for verdadeira.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>
+            © 2024 Estudo+ | Seu portal para o sucesso acadêmico<br>
+            Recursos, dicas e orientação para otimizar sua jornada de aprendizado.<br>
+           
+        </p>
+    </footer>
+    
+    <script src="app.js"></script>
+    <script src="perguntas.js"></script>
+
+    <script>
+        // Seleciona todos os cartões
+        const cartoes = document.querySelectorAll('.cartao');
+    
+        // Adiciona o evento de clique em cada cartão
+        cartoes.forEach(cartao => {
+            cartao.addEventListener('click', function() {
+                // Alterna a classe 'virado' no cartão clicado
+                cartao.classList.toggle('virado');
+            });
+        });
+    </script>
+</body>
+</html>
